@@ -1,0 +1,82 @@
+*{
+    margin:0;
+  
+}
+body{
+    font-family:sans-serif,'Robot';
+    margin:0;
+}
+.navbar{
+    width:100%;
+    height:50px;
+    background-color:black;
+top:0;
+position:absolute;}
+    
+.navbar-container{
+        display: flex;
+        align-items:center;
+        background-color: rgb(7, 6, 6);
+        padding:0 50px;
+        height:100%;
+        color:beige;
+
+ }
+.logo-container{
+        flex:1;
+       
+    }
+    .logo{
+        font-family: 'Zen Loop', cursive;
+        font-size: 50px;
+        color:rgb(200, 200, 223)
+    }
+    .menu-list-item.active{
+        font-weight:bold;
+        
+    }
+.menu-container{
+        flex:6;
+  
+        display:flex;
+    }
+ .menu-list-item{
+     list-style-type: none;
+        margin:30px;
+    }
+.profile-container{
+        flex:2;
+        display: flex;
+        align-items:center;
+        background-color: rgb(192, 192, 224);
+justify-content: flex-end;
+        
+    }
+        
+    .profile-text-container{
+        margin: 0 20px;;
+
+    }
+    .toggle{
+        width: 40px;
+        height: 20px;
+        border-radius:50px;
+        object-fit:cover;
+        background-color: aliceblue;
+       
+    }
+    .profile-picture{
+        width: 40px;
+        height: 40px;
+     
+        border-radius:50%;
+        object-fit: cover;
+    }
+.sidebar{
+    width:50px;
+    height:100%;
+    background-color:black;
+    position:fixed;
+    top:0;
+
+}
