@@ -137,7 +137,7 @@ margin: 50px;
     font:15px bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 background-color: rgb(132, 144, 177);
-color:wheat;
+color:white;
 padding: 10px 20px;
 border-radius: 10px;
 border:none;
@@ -150,16 +150,27 @@ border:none;
    text-transform: uppercase;
 }
 .movie-list-container{
-    padding: 20px;
+    padding:0  20px  ;
+    
 
+
+}
+.movie-list-wrapper{
+    position: relative;
+overflow: hidden;
+    background-color: rgb(15, 9, 9);
 }
 .movie-list{
     display: flex;
     height: 300px;
     align-items: center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+
 }
 .movie-list-item{
     margin-right: 30px;
+    position: relative;
     
 }
 .movie-list-item:hover .movie-list-item-img{
@@ -171,26 +182,98 @@ border:none;
   width: 270px;
   height: 200px;
   object-fit: cover;
-  border-radius: 60px;
+  border-radius:20px;
   transition: all 1s ease-out;
+ 
 }
+.movie-list-item:hover  .movie-list-item-title,
+
+
+.movie-list-item:hover  .movie-list-item-desc,
+
+
+.movie-list-item:hover  .movie-list-item-button{
+    opacity: 1;
+}
+
+
+
+
+
+
 .movie-list-item-title{
     background-color: #333;
     padding: 0 10px;
     font: 32px bold ;
-    position: relative;
-   top: 10px;
+    position: absolute;
+   top: 10%;
   left: 50px;
-
+opacity: 0;
 }
 .movie-list-item-desc{
     background-color: #333;
     padding: 10px;
    font-size:14px;
-    position: relative;
-top: 10px;
+    position: absolute;
+top: 30%;
 left: 50px;
+width:230px;
+opacity: 0;
+}
+.movie-list-item-button{
+    padding: 10px;
+    font:15px bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(132, 144, 177);
+color:white;
+border-radius: 10px;
+border:none;
+    outline:none;
+    cursor:pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
 
 }
+.arrow{
+    font-size: 120px;
+    position: absolute;top: 90px;
+right:0;
+color:gray;
+opacity: .5;;
 
+}
+.container.active{
+    background-color: white;
+
+}
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color:black
+}
+.sidebar.active{   
+     background-color: white;
+}
+.left-menu-icon.active{
+   color:black
+  }
+.toggle.active{
+   background-color:black;
+   }
+.toggle-ball.active{
+    background-color: white;   
+transform: translateX(-20px);}
+.movie-list-wrapper.active{
     
+    background-color: white;
+}
+.profile-container.active{
+    background-color: white;
+}
+
+        
